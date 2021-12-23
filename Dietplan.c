@@ -76,7 +76,7 @@ void telaPrincipal(void) {
 
 
 void telaEquipe(void) {
-     printf("\n");
+    printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                                   ///\n");
     printf("///                   Universidade Federal do Rio Grande do Norte                     ///\n");
