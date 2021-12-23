@@ -1,29 +1,41 @@
 #include<stdio.h>
+#include <stdlib.h>
 
 
 /////
 /// Asisnaturas das funções
+
 void telaSobre(void);
 void telaPrincipal(void);
 void telaEquipe(void);
-
+void telaMenuCardapio(void);
+void telaCadastrarcCardapio(void);
+void telaPesquisarCardapio(void);
+void telaAlterarCardapio(void);
+void telaExcluirCardapio(void);
 
 
 /////
-// Programa principal
+//Programa principal
+
 int main(void) {
     telaSobre();
-    telaPrincipal();
     telaEquipe();
+    telaPrincipal();
+    telaMenuCardapio();
+    telaCadastrarCardapio();
+    telaPesquisarCardapio();
+    telaAlterarCardapio();
+    telaExcluircCardapio();
     return 0;
 }
-
 
 
 /////
 // Funções
 
 void telaSobre(void) {
+    system("clear||cls"); 
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                                   ///\n");
@@ -44,11 +56,14 @@ void telaSobre(void) {
     printf("///                                                                                   ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////////////////\n");
     printf("\n"); 
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
 }
 
 
 
 void telaPrincipal(void) {
+    system("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                                   ///\n");
@@ -71,11 +86,14 @@ void telaPrincipal(void) {
     printf("///                                                                                   ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
 }
 
 
 
 void telaEquipe(void) {
+    system("clear||cls");
     printf("\n");
     printf("/////////////////////////////////////////////////////////////////////////////////////////\n");
     printf("///                                                                                   ///\n");
@@ -98,5 +116,114 @@ void telaEquipe(void) {
     printf("///                                                                                   ///\n");
     printf("/////////////////////////////////////////////////////////////////////////////////////////\n");
     printf("\n");
+    printf("\t\t\t>>>Tecle <ENTER> para continuar...\n");
+    getchar();
+}
+
+
+
+void telaMenuCardapio(void) {
+    sistema("clear||cls");
+    printf("\n");
+    printf("////////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                                  ///\n");
+    printf("///                  = = = = = = = = = = = = = = = = = = = = = = = = =               ///\n");
+    printf("///                = = = = = = = = = = Menu Cardápio = = = = = = = = = =             ///\n");
+    printf("///                 = = = = = = = = = = = = = = = = = = = = = = = = = =              ///\n");
+    printf("///                                                                                  ///\n");
+    printf("///                  1. Cadastrar um novo Cardápio                                   ///\n");
+    printf("///                  2. Pesquisar a numeração de um Cardápio                         ///\n");
+    printf("///                  3. Atualizar o cadastro do Cardápio                             ///\n");
+    printf("///                  4. Excluir um Cardápio do sistema                               ///\n");
+    printf("///                  0. Voltar ao menu anterior                                      ///\n");
+    printf("///                                                                                  ///\n");
+    printf("///                  Escolha a opção desejada:                                       ///\n");
+    printf("///                                                                                  ///\n");
+    printf("///                                                                                  ///\n");
+    printf("////////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
+}
+
+
+
+void telaCadastrarCardapio(void) {
+    sistema("clear||cls");
+    printf("\n");
+    printf("////////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                                  ///\n");
+    printf("///                   = = = = = = = = = = = = = = = = = = = = = = = =                ///\n");
+    printf("///                 = = = = = = = = = Cadastrar Cardápio = = = = = = =               ///\n");
+    printf("///                   = = = = = = = = = = = = = = = = = = = = = = = =                ///\n");
+    printf("///                                                                                  ///\n");
+    printf("///                    Numeração (apenas números):                                   ///\n");
+    printf("///                    Data da Criação (dd/mm/aaaa):                                 ///\n");
+    printf("///                                                                                  ///\n");
+    printf("///                                                                                  ///\n");
+    printf("////////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
+}
+
+
+
+void telaPesquisarCardapio(void) {
+    sistema("clear||cls");
+    printf("\n");
+    printf("////////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                                  ///\n");
+    printf("///                  = = = = = = = = = = = = = = = = = = = = = = = =                 ///\n");
+    printf("///                = = = = = = = = Pesquisar Cardápio = = = = = = = =                ///\n");
+    printf("///                  = = = = = = = = = = = = = = = = = = = = = = = =                 ///\n");
+    printf("///                                                                                  ///\n");
+    printf("///                   Informe a numeração (apenas números):                          ///\n");
+    printf("///                                                                                  ///\n");
+    printf("///                                                                                  ///\n");
+    printf("////////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
+}
+
+
+
+void telaAlterarCardapio(void) {
+    sistema("clear||cls");
+    printf("\n");
+    printf("///////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                                 ///\n");
+    printf("///                   = = = = = = = = = = = = = = = = = = = = = = = =               ///\n");
+    printf("///                 = = = = = = = = Alterar Cardápio = = = = = = = = =              ///\n");
+    printf("///                   = = = = = = = = = = = = = = = = = = = = = = = =               ///\n");
+    printf("///                                                                                 ///\n");
+    printf("///                   Informe a numeração(apenas números):                          ///\n");
+    printf("///                                                                                 ///\n");
+    printf("///                                                                                 ///\n");
+    printf("///////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
+}
+
+
+
+void telaExcluirCardapio(void) {
+    sistema("clear||cls");
+    printf("\n");
+    printf("///////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("///                                                                                 ///\n");
+    printf("///                  = = = = = = = = = = = = = = = = = = = = = = = =                ///\n");
+    printf("///                = = = = = = = = Excluir Cardápio = = = = = = = = =               ///\n");
+    printf("///                  = = = = = = = = = = = = = = = = = = = = = = = =                ///\n");
+    printf("///                                                                                 ///\n");
+    printf("///                  Informe a numeração (apenas números):                          ///\n");
+    printf("///                                                                                 ///\n");
+    printf("///                                                                                 ///\n");
+    printf("///////////////////////////////////////////////////////////////////////////////////////\n");
+    printf("\n");
+    printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
+    getchar();
 }
 
