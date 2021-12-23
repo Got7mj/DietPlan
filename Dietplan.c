@@ -226,3 +226,4 @@ void telaExcluirCardapio(void) {
     printf("\t\t\t>>> Tecle <ENTER> para continuar...\n");
     getchar();
 }
+
